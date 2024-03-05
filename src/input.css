@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --yellow: #d8be53;
+  --green: #607d4b;
+  --black: #262525;
+  --brown: #84664e;
+  --blue: #395557;
+  --white: #fff;
+  --transition: all 0.45s ease;
+}
+
+@layer components {
+  .btn-primary {
+    padding: 7px 19px;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    transition: var(--transition);
+  }
+  .nav-link {
+    font-weight: 400;
+    font-size: medium;
+    transition: var(--transition);
+  }
+  .btn-primary:is(:active, :hover),
+  .logo:is(:active, :hover),
+  .nav-link:is(:active, :hover) {
+    color: var(--yellow);
+    border-color: var(--yellow);
+  }
+  .mobile-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* z-index: 999999; */
+    width: 90%;
+    height: 100%;
+    height: 100vh;
+    background: var(--brown);
+    color: var(--white);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+    transition: all 1s ease;
+  }
+
+  .mobile-menu .nav-link {
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  .mobile-menu.show {
+    display: flex;
+  }
+  .hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(../img/hero.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: contain;
+  }
+}

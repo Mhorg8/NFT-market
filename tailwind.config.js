@@ -3,19 +3,26 @@ module.exports = {
   content: ["./dist/*.{html,js}"],
   theme: {
     container: {
-      center: true
-    },
-    fontWeight: {
-      thin: '100',
-      hairline: '100',
-      extralight: '200',
-      light: '300',
-      normal: '400',
-      medium: '500',
-      semibold: '600',
-      bold: '700',
-      extrabold: '800',
-      black: '900',
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        md: '5rem',
+        lg: '5rem',
+        xl: '6rem',
+      },
+      fontWeight: {
+        thin: '100',
+        hairline: '100',
+        extralight: '200',
+        light: '300',
+        normal: '400',
+        medium: '500',
+        semibold: '600',
+        bold: '700',
+        extrabold: '800',
+        black: '900',
+      },
     },
     extend: {
       colors: {

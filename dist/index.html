@@ -59,14 +59,25 @@
       </div>
     </header>
 
-    <main class="">
+    <main class="overflow-hidden">
       <!-- landingpage -->
       <section class="landing-page">
-        <div class="container">
-          <div>
-            <h1 class="font-semibold text-white text-[60px]">
+        <div class="container relative">
+          <!-- blobs -->
+          <div
+            class="blob absolute md:w-[300px] w-[200px] h-[200px] md:h-[300px] -left-0 top-0 bg-green-color"
+          ></div>
+          <div
+            class="blob absolute md:w-[300px] w-[200px] h-[200px] md:h-[300px] right-10 top-0 bg-brown-color"
+          ></div>
+          <!-- blobs -->
+          <!-- text-content -->
+          <div class="text-content">
+            <h1
+              class="font-semibold text-white md:text-[60px] text-[32px] leading-tight"
+            >
               Discover <br />
-              Digital Art and <br />
+              Digital Art and<br />
               Collect NTFs.
             </h1>
             <p class="text-white text-lg mt-8 max-w-[500px]">
@@ -74,16 +85,150 @@
               quis animi laboriosam porro aliquid libero repellendus architecto
               quaerat, deleniti quo rem, obcaecati natus dolores ex possimus
             </p>
-            <div class="flex items-center gap-x-10 mt-8">
-              <button class="btn-primary">Get Started</button>
-              <button class="text-white">
+            <div class="flex items-center gap-x-10 mt-8 btn-group">
+              <button class="btn-primary text-white">Get Started</button>
+              <button class="text-white learn-more">
                 Learn More
                 <i class="ri-arrow-right-line align-middle text-lg"></i>
               </button>
             </div>
           </div>
           <!-- img box -->
-          <div class="hero-img h-[100vh] w-full">1</div>
+          <div
+            class="hero-img h-full w-full scale-150 md:scale-125 md:block md:ml-[200px]"
+          ></div>
+        </div>
+      </section>
+
+      <!-- section  -->
+      <section id="featuers-sec">
+        <div class="container h-full">
+          <div
+            class="features flex flex-wrap items-center bg-transparent justify-between rounded-2xl px-5 py-10 gap-y-5 gap-x-5 mt-20 relative"
+          >
+            <div
+              class="blob absolute md:w-[400px] md:h-[400px] -right-[20%] top-0 bg-yellow-color"
+            ></div>
+            <!-- div 1 this is for rates -->
+            <div
+              class="flex flex-1 items-center justify-between cursor-pointer"
+            >
+              <div class="flex flex-col items-start justify-center">
+                <p class="text-white">Artwork</p>
+                <h2 class="text-white md:text-[58px] text-[36px] font-bold">
+                  27k+
+                </h2>
+              </div>
+
+              <div
+                class="flex flex-col items-start justify-center cursor-pointer"
+              >
+                <p class="text-white">Auction</p>
+                <h2 class="text-white md:text-[58px] text-[36px] font-bold">
+                  25k+
+                </h2>
+              </div>
+
+              <div
+                class="flex flex-col items-start justify-center cursor-pointer"
+              >
+                <p class="text-white">Artist</p>
+                <h2 class="text-white md:text-[58px] text-[36px] font-bold">
+                  12k+
+                </h2>
+              </div>
+            </div>
+            <!-- div 2 this is for UsersProfile -->
+            <div
+              class="flex flex-1 flex-col items-center justify-center relative"
+            >
+              <div class="flex items-center justify-center gap-x-5">
+                <p class="text-lg text-white">Art</p>
+                <p class="text-white text-xl font-semibold">3.4 ETH</p>
+              </div>
+              <!-- users mini profiles -->
+              <div class="flex items-center justify-end mt-5">
+                <div class="miniProf-1 miniProf"></div>
+                <div class="miniProf-2 miniProf"></div>
+                <div class="miniProf-3 miniProf"></div>
+                <div class="miniProf-4 miniProf"></div>
+                <div class="miniProf-5 miniProf"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section  popular items-->
+      <section id="popular-sec">
+        <div class="container w-full h-full mt-32">
+          <div
+            class="w-full h-full flex flex-wrap md:flex-row flex-col gap-y-10 items-center justify-between relative"
+          >
+            <!-- this item for gallery -->
+            <div
+              class="grid grid-cols-2 md:w-1/2 w-full gap-x-5 gap-y-20 order-2 md:order-1"
+            >
+              <div
+                class="col-span-2 md:col-span-1 gallery-box h-[170px] w-full rounded-3xl relative"
+              >
+                <img class="gallery-img" src="../img/hero.png" alt="" />
+              </div>
+              <div
+                class="col-span-2 md:col-span-1 gallery-box h-[170px] w-full rounded-3xl relative"
+              >
+                <img
+                  class="gallery-img"
+                  src="../img/userProfile/gallery-2.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="col-span-2 md:col-span-1 gallery-box h-[170px] w-full rounded-3xl relative"
+              >
+                <img
+                  class="gallery-img"
+                  src="../img/userProfile/gallery-3.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="col-span-2 md:col-span-1 gallery-box h-[170px] w-full rounded-3xl relative"
+              >
+                <img
+                  class="gallery-img object-fit"
+                  src="../img/userProfile/gallery-4.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="blob w-[400px] h-[400px] bg-brown-color absolute -left-[15%] -bottom-[15%]"
+            ></div>
+            <!-- this div for text content -->
+            <div
+              class="mx-auto flex flex-col items-center justify-center gap-y-5 md:w-1/2 w-full h-full order-1 md:order-2"
+            >
+              <div>
+                <span class="text-sm text-green-color">Popular Item</span>
+                <h2
+                  class="text-[38px] my-5 md:text-[46px] text-white font-semibold leading-10 select-none"
+                >
+                  Hot Trending <br />
+                  On This <br />Week.
+                </h2>
+                <p class="text-white max-w-[400px] mb-10">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorem expedita molestias at reiciendis eum quae. Tempora
+                  corporis nostrum vero commodi!
+                </p>
+
+                <a href="#" class="read-more text-white text-lg font-semibold"
+                  >See All <i class="ri-arrow-right-line ml-1F"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

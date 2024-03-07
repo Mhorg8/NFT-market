@@ -59,7 +59,7 @@
       </div>
     </header>
 
-    <main class="overflow-hidden">
+    <main class="overflow-hidden pb-5">
       <!-- landingpage -->
       <section class="landing-page">
         <div class="container relative">
@@ -231,7 +231,264 @@
           </div>
         </div>
       </section>
+
+      <!-- section Top list of artist -->
+      <section id="topArtist-sec">
+        <div class="container w-full h-full relative">
+          <div
+            class="blob w-[400px] h-[400px] absolute -right-10 bottom-0 bg-yellow-color"
+          ></div>
+          <div
+            class="flex md:flex-row flex-wrap flex-col w-full h-full mt-24 gap-y-20"
+          >
+            <!-- this div for text content -->
+            <div
+              class="mx-auto flex flex-col items-center justify-center gap-y-5 md:w-1/2 w-full h-full"
+            >
+              <div>
+                <span class="text-sm text-green-color">Artists</span>
+                <h2
+                  class="text-[38px] my-5 md:text-[46px] text-white font-semibold leading-10 select-none"
+                >
+                  Top List <br />
+                  Artist.
+                </h2>
+                <p class="text-white max-w-[400px] mb-10">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorem expedita molestias at reiciendis eum quae
+                </p>
+
+                <a href="#" class="read-more text-white text-lg font-semibold"
+                  >See All <i class="ri-arrow-right-line ml-1F"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- this div for two card showcase -->
+            <div
+              class="grid grid-cols-12 w-full md:w-1/2 h-full gap-y-16 gap-x-5"
+            >
+              <div
+                class="w-full md:h-[340px] h-[280px] relative rounded-3xl md:col-span-6 col-span-12 bg-transparent showcase"
+              >
+                <!-- user info  -->
+                <div
+                  class="w-full flex flex-col items-center justify-center h-1/2 gap-y-1"
+                >
+                  <!-- user profile container -->
+                  <div
+                    class="w-[100px] md:w-[70px] h-[100px] md:h-[70px] rounded-full overflow-hidden absolute md:-top-[35px] -top-[50px] showcase-profile"
+                  >
+                    <img
+                      class="w-full h-full object-cover"
+                      src="../img/userProfile/prof-2.jpg"
+                      alt="user image"
+                    />
+                  </div>
+                  <!-- user name and other describtion -->
+                  <div class="">
+                    <p class="text-white text-2xl font-semibold text-center">
+                      Johnny Five
+                    </p>
+                    <p class="text-white text-sm font-semibold text-center">
+                      Bizrate Survey,March'22
+                    </p>
+                  </div>
+                </div>
+                <!-- user banner -->
+                <div class="w-full h-1/2 rounded-3xl bg-blue-color">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="../img/userProfile/gallery-3.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- showcasee 2 -->
+              <div
+                class="w-full md:h-[340px] h-[280px] relative rounded-3xl md:col-span-6 col-span-12 bg-transparent showcase"
+              >
+                <!-- user info  -->
+                <div
+                  class="w-full flex flex-col items-center justify-center h-1/2 gap-y-1"
+                >
+                  <!-- user profile container -->
+                  <div
+                    class="w-[100px] md:w-[70px] h-[100px] md:h-[70px] rounded-full overflow-hidden absolute md:-top-[35px] -top-[50px] showcase-profile"
+                  >
+                    <img
+                      class="w-full h-full object-cover"
+                      src="../img/userProfile/prof-5.jpg"
+                      alt="user image"
+                    />
+                  </div>
+                  <!-- user name and other describtion -->
+                  <div class="">
+                    <p class="text-white text-2xl font-semibold text-center">
+                      Lucinta Luna
+                    </p>
+                    <p class="text-white text-sm font-semibold text-center">
+                      Bizrate Survey,March'22
+                    </p>
+                  </div>
+                </div>
+                <!-- user banner -->
+                <div class="w-full h-1/2 rounded-3xl bg-blue-color">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="../img/userProfile/gallery-2.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- branding -->
+        <div class="container">
+          <div class="flex items-center justify-between flex-wrap mt-24">
+            <img
+              src="../img/brands/binacnce.png"
+              alt="binance-logo"
+              class="brand-logo"
+            />
+            <img
+              src="../img/brands/metaMask.png"
+              alt="meta-mask-logo"
+              class="brand-logo"
+            />
+            <img
+              src="../img/brands/oculus.png"
+              alt="oculus-logo"
+              class="brand-logo"
+            />
+            <img
+              src="../img/brands/unreal.png"
+              alt="unreal-engine"
+              class="brand-logo"
+            />
+            <img
+              src="../img/brands/download.png"
+              alt="quixel-logo"
+              class="brand-logo"
+            />
+          </div>
+        </div>
+
+        <div class="container mt-24 relative">
+          <div
+            class="blob absolute -left-10 w-[300px] top-0 h-[300px] bg-blue-color"
+          ></div>
+          <div class="subscribe-text">
+            <h2
+              class="font-semibold text-white md:text-[60px] text-[32px] leading-tight"
+            >
+              Subscribe to Get Fresh <br />News Update About <br />
+              NTFs.
+            </h2>
+
+            <button class="btn-primary text-white mt-5">Subscribe</button>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <div class="container flex w-full h-full md:mt-24 mt-14 relative">
+        <div
+          class="blob absolute w-[400px] h-[400px] bg-green-color -bottom-32 right-10"
+        ></div>
+        <div class="grid grid-cols-12 w-full h-full gap-x-3">
+          <div class="col-span-12 md:col-span-4 w-full h-full">
+            <h3 class="text-white text-xl font-bold traling-thin">EnDashmo</h3>
+            <p class="text-white text-lg leading-5 my-3">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+              voluptas explicabo ullam tempore.
+            </p>
+            <!-- social icons -->
+            <div class="flex items-center gap-x-8">
+              <i class="ri-discord-line text-2xl text-white social-links"></i>
+              <i class="ri-instagram-line text-2xl text-white social-links"></i>
+              <i class="ri-telegram-line text-2xl text-white social-links"></i>
+              <i class="ri-pinterest-line text-2xl text-white social-links"></i>
+            </div>
+          </div>
+
+          <!-- <div class="h-full w-full"> -->
+          <ul
+            class="col-span-6 md:col-span-2 flex flex-col gap-y-5 my-4 md:my-0"
+          >
+            <h3 class="text-white text-2xl font-bold tracking-wider">
+              Explore
+            </h3>
+            <li class="footer-item"><a class="footer-link" href="#">Art</a></li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Collectibles</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Domain Name</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Utility</a>
+            </li>
+          </ul>
+
+          <ul
+            class="col-span-6 md:col-span-2 flex flex-col gap-y-5 my-4 md:my-0"
+          >
+            <h3 class="text-white text-2xl font-bold tracking-wider">
+              Statistic
+            </h3>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Ranking</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Activity</a>
+            </li>
+          </ul>
+
+          <ul
+            class="col-span-6 md:col-span-2 flex flex-col gap-y-5 my-4 md:my-0"
+          >
+            <h3 class="text-white text-2xl font-bold tracking-wider">
+              Resource
+            </h3>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Help Center</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Platform Status</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Partners</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Blog</a>
+            </li>
+            <li class="footer-item"><a class="footer-link" href="#">FAQ</a></li>
+          </ul>
+
+          <ul
+            class="col-span-6 md:col-span-2 flex flex-col gap-y-5 my-4 md:my-0"
+          >
+            <h3 class="text-white text-2xl font-bold tracking-wider">
+              Company
+            </h3>
+            <li class="footer-item">
+              <a class="footer-link" href="#">About Us</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Career</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Suport</a>
+            </li>
+          </ul>
+          <!-- </div> -->
+        </div>
+      </div>
+    </footer>
 
     <script src="js/main.js"></script>
   </body>

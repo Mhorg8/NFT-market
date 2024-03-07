@@ -185,4 +185,60 @@
   .gallery-box:nth-child(4) {
     background: linear-gradient(90deg, #a26e44 0%, #d8be55 100%);
   }
+  .showcase {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+  .showcase-profile {
+    box-shadow: 8px 12px 19px 0px #f5f5f533;
+  }
+  .brand-logo {
+    width: 100px;
+    height: 80px;
+    mix-blend-mode: color-burn;
+    aspect-ratio: auto;
+    cursor: pointer;
+  }
+  .brand-logo:nth-child(1) {
+    animation: move-left 1s 0.2s linear;
+  }
+  .brand-logo:nth-child(2) {
+    animation: move-left 1s 0.4s linear;
+  }
+  .brand-logo:nth-child(3) {
+    animation: move-left 1s 0.6s linear;
+  }
+  .brand-logo:nth-child(4) {
+    animation: move-left 1s 0.8s linear;
+  }
+  .brand-logo:nth-child(5) {
+    animation: move-left 1s 1.2s linear;
+  }
+  .subscribe-text {
+    animation: move-left 1s 0.5s linear;
+  }
+  .subscribe-text button {
+    animation: move-left 1s 0.8s linear;
+  }
+  .social-links:hover {
+    color: var(--yellow);
+  }
+  .social-links:nth-child(1) {
+    animation: move-up 0.5s 1s linear;
+  }
+  .social-links:nth-child(2) {
+    animation: move-left 1s 0.6s linear;
+  }
+
+  .social-links:nth-child(3) {
+    animation: move-left 1s 0.8s linear;
+  }
+  .social-links:nth-child(4) {
+    animation: move-right 0.5s 1s linear;
+  }
+  .footer-link {
+    color: var(--white);
+  }
+  .footer-link:hover {
+    color: var(--yellow);
+  }
 }

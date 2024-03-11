@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT MARKET</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <!-- remix icon -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <body class="bg-black-color">
+    <!-- header -->
+    <header class="lg-header overflow-hidden">
+      <div class="container flex items-center justify-between text-white py-8">
+        <!-- logo -->
+        <div>
+          <a class="font-bold text-xl logo" href="index.html">EnDashmo</a>
+        </div>
+
+        <!-- large menu -->
+        <nav class="flex items-center gap-x-8">
+          <ul class="lg-menu md:flex items-center gap-x-8 hidden">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Collection</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Market Place</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Community</a></li>
+            <button class="btn-primary"><a href="#">Profile</a></button>
+          </ul>
+        </nav>
+
+        <!-- hamburger-btn -->
+        <div id="hamburger-btn" class="z-50 block md:hidden">
+          <i class="ri-menu-line text-2xl font-bold"></i>
+        </div>
+
+        <!-- mobil menu -->
+        <nav id="mobile-menu" class="mobile-menu z-30">
+          <ul class="lg-menu flex flex-col items-center gap-y-8">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Collection</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Market Place</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Community</a></li>
+          </ul>
+          <button class="btn-primary"><a href="#">Profile</a></button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="flex items-center justify-center h-full rounded-2x relative   ">
+        <div
+          class="login-form flex w-[300px] h-[550px] md:w-[800px] bg-white h-ful rounded-2xl shadow-lg"
+        >
+        <div class="blob absolute w-[400px] h-[400px] rounded-full bg-brown-color top-0 left-0 "></div>
+          <!-- form -->
+          <form class="md:w-1/2 w-full h-full flex flex-col px-10 py-10">
+            <!-- heading -->
+            <div class="flex flex-col justify-start items-center text-left gap-y-2">
+              <h2 class="text-2xl md:text-3xl font-bold text-center">Wellcome Back !</h2>
+              <p class="text-sm font-medium md:mb-5 mt-2">Countinue your career :)</p>
+
+              <!-- login options -->
+              <div>
+                <button
+                  class="btn-primary border-black-color px-2 py-1 text-sm font-bold"
+                >
+                  <i class="ri-google-fill"></i> Login with Google
+                </button>
+                <button
+                  class="btn-primary border-black-color px-2 py-1 text-sm font-bold"
+                >
+                  <i class="ri-apple-fill"></i> Login with Apple
+                </button>
+              </div>
+            </div>
+
+            <!-- input filds -->
+            <div class="flex flex-col gap-y-7 mt-10">
+              <!-- email -->
+              <div class="flex flex-col gap-y-1">
+                <label for="email-input">Email:</label>
+                <input
+                  id="email-input"
+                  class="input-fild"
+                  type="text"
+                  name="email-input"
+                />
+              </div>
+
+              <!-- password -->
+              <div class="flex flex-col gap-y-1">
+                <div class="flex items-center justify-between">
+                  <label for="passwordInput">Password:</label>
+                  <span class="text-sm font-semibold text-yellow-color"><a href="#">Forgot Password?</a></span>
+                </div>
+                <input
+                  id="password-input"
+                  class="input-fild"
+                  type="text"
+                  name="passwordInput"
+                />
+              </div>
+
+              <!-- checkbox -->
+              <div class="flex items-center gap-x-3">
+                <input type="checkbox" />
+                <span class="text-sm font-semibold">Iagree to the <a class="text-yellow-color href="#">Terms & Privacy</a></span>
+              </div>
+
+              <!-- submit btn -->
+              <button id="submit-btn" type="submit" class="w-full bg-green-color py-2 rounded-2xl text-white font-semibold">Login</button>
+
+              <p class="text-sm font-semibold">Don't have an account? <a href="#" class="text-yellow-color">Sign up</a></p>
+            </div>
+          </form>
+
+          <!-- img content -->
+          <div class="md:w-1/2 h-full hidden md:block">
+            <img
+              src="../img/login-form.webp"
+              class="w-full h-full object-cover rounded-e-2xl"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container flex w-full h-full md:mt-24 mt-14 relative">
+        <div
+          class="blob absolute w-[400px] h-[400px] bg-green-color bottom-1/2 -translate-y-1/2 md:-bottom-32 right-10"
+        ></div>
+        <div class="grid grid-cols-12 w-full h-full gap-x-3">
+          <div class="col-span-12 md:col-span-4 w-full h-full">
+            <h3 class="text-white text-xl font-bold traling-thin">EnDashmo</h3>
+            <p class="text-white text-lg leading-5 my-3">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+              voluptas explicabo ullam tempore.
+            </p>
+            <!-- social icons -->
+            <div class="flex items-center gap-x-8">
+              <i class="ri-discord-line text-2xl text-white social-links"></i>
+              <i class="ri-instagram-line text-2xl text-white social-links"></i>
+              <i class="ri-telegram-line text-2xl text-white social-links"></i>
+              <i class="ri-pinterest-line text-2xl text-white social-links"></i>
+            </div>
+          </div>
+
+          <!-- <div class="h-full w-full"> -->
+          <ul
+            class="col-span-6 md:col-span-2 flex flex-col gap-y-5 my-4 md:my-0"
+          >
+            <h3 class="text-white text-2xl font-bold tracking-wider">
+              Explore
+            </h3>
+            <li class="footer-item"><a class="footer-link" href="#">Art</a></li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Collectibles</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Domain Name</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Utility</a>
+            </li>
+          </ul>
+
+          <ul
+            class="col-span-6 md:col-span-2 flex flex-col gap-y-5 my-4 md:my-0"
+          >
+            <h3 class="text-white text-2xl font-bold tracking-wider">
+              Statistic
+            </h3>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Ranking</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Activity</a>
+            </li>
+          </ul>
+
+          <ul
+            class="col-span-6 md:col-span-2 flex flex-col gap-y-5 my-4 md:my-0"
+          >
+            <h3 class="text-white text-2xl font-bold tracking-wider">
+              Resource
+            </h3>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Help Center</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Platform Status</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Partners</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Blog</a>
+            </li>
+            <li class="footer-item"><a class="footer-link" href="#">FAQ</a></li>
+          </ul>
+
+          <ul
+            class="col-span-6 md:col-span-2 flex flex-col gap-y-5 my-4 md:my-0"
+          >
+            <h3 class="text-white text-2xl font-bold tracking-wider">
+              Company
+            </h3>
+            <li class="footer-item">
+              <a class="footer-link" href="#">About Us</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Career</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Suport</a>
+            </li>
+          </ul>
+          <!-- </div> -->
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

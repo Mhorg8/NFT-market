@@ -33,7 +33,9 @@
               <a href="#" class="nav-link">Market Place</a>
             </li>
             <li class="nav-item"><a href="#" class="nav-link">Community</a></li>
-            <button class="btn-primary"><a href="#">Profile</a></button>
+            <button class="btn-primary">
+              <a id="login-btn" href="#">Login</a>
+            </button>
           </ul>
         </nav>
 
@@ -59,17 +61,30 @@
     </header>
 
     <main>
-      <section class="flex items-center justify-center h-full rounded-2x relative   ">
+      <section
+        class="flex items-center justify-center h-full rounded-2x relative"
+      >
         <div
           class="login-form flex w-[300px] h-[550px] md:w-[800px] bg-white h-ful rounded-2xl shadow-lg"
         >
-        <div class="blob absolute w-[400px] h-[400px] rounded-full bg-brown-color top-0 left-0 "></div>
+          <div
+            class="blob absolute w-[400px] h-[400px] rounded-full bg-brown-color top-0 left-0"
+          ></div>
           <!-- form -->
-          <form class="md:w-1/2 w-full h-full flex flex-col px-10 py-10">
+          <form
+            id="login-from"
+            class="md:w-1/2 w-full h-full flex flex-col px-10 py-10"
+          >
             <!-- heading -->
-            <div class="flex flex-col justify-start items-center text-left gap-y-2">
-              <h2 class="text-2xl md:text-3xl font-bold text-center">Wellcome Back !</h2>
-              <p class="text-sm font-medium md:mb-5 mt-2">Countinue your career :)</p>
+            <div
+              class="flex flex-col justify-start items-center text-left gap-y-2"
+            >
+              <h2 class="text-2xl md:text-3xl font-bold text-center">
+                Wellcome Back !
+              </h2>
+              <p class="text-sm font-medium md:mb-5 mt-2">
+                Countinue your career :)
+              </p>
 
               <!-- login options -->
               <div>
@@ -103,7 +118,9 @@
               <div class="flex flex-col gap-y-1">
                 <div class="flex items-center justify-between">
                   <label for="passwordInput">Password:</label>
-                  <span class="text-sm font-semibold text-yellow-color"><a href="#">Forgot Password?</a></span>
+                  <span class="text-sm font-semibold text-yellow-color"
+                    ><a href="#">Forgot Password?</a></span
+                  >
                 </div>
                 <input
                   id="password-input"
@@ -116,13 +133,27 @@
               <!-- checkbox -->
               <div class="flex items-center gap-x-3">
                 <input type="checkbox" />
-                <span class="text-sm font-semibold">Iagree to the <a class="text-yellow-color href="#">Terms & Privacy</a></span>
+                <span class="text-sm font-semibold"
+                  >Iagree to the
+                  <a class="text-yellow-color" href="#"
+                    >Terms & Privacy</a
+                  ></span
+                >
               </div>
 
               <!-- submit btn -->
-              <button id="submit-btn" type="submit" class="w-full bg-green-color py-2 rounded-2xl text-white font-semibold">Login</button>
+              <button
+                id="submit-btn"
+                type="submit"
+                class="w-full bg-green-color py-2 rounded-2xl text-white font-semibold"
+              >
+                Login
+              </button>
 
-              <p class="text-sm font-semibold">Don't have an account? <a href="#" class="text-yellow-color">Sign up</a></p>
+              <p class="text-sm font-semibold">
+                Don't have an account?
+                <a href="#" class="text-yellow-color">Sign up</a>
+              </p>
             </div>
           </form>
 
@@ -234,6 +265,7 @@
       </div>
     </footer>
 
+    <script src="js/loginValidation.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

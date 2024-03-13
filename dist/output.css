@@ -891,7 +891,7 @@ label {
   }
 
   form::after {
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
     position: absolute;
@@ -899,17 +899,92 @@ label {
     color: var(--white);
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
-    z-index:-1;
+    z-index: -1;
   }
 
   form span,
     form a,
     form button,
-    form h2 , 
+    form h2,
     form label,
     form p {
     color: var(--white);
   }
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+.banner-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-wrapper::after {
+  content: "121212";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.category-item {
+  transition: color 0.45s ease;
+  cursor: pointer;
+  animation: fade-in 1s ease;
+}
+
+.category-item:nth-child(2) {
+  animation: fade-in 1s 0.2s ease;
+}
+
+.category-item:nth-child(3) {
+  animation: fade-in 1s 0.4s ease;
+}
+
+.category-item:nth-child(4) {
+  animation: fade-in 1s 0.6s ease;
+}
+
+.category-item:hover {
+  color: var(--yellow);
+}
+
+.pro-container .gallery-box {
+  position: relative;
+  height: 170px;
+  cursor: pointer;
+}
+
+.pro-container .gallery-box .product-text-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+}
+
+.pro-container .gallery-box:hover .product-text-content {
+  opacity: 1;
 }
 
 .absolute {
@@ -960,12 +1035,24 @@ label {
   left: 0px;
 }
 
+.left-1\/2 {
+  left: 50%;
+}
+
 .right-10 {
   right: 2.5rem;
 }
 
 .top-0 {
   top: 0px;
+}
+
+.top-1\/2 {
+  top: 50%;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .z-30 {
@@ -1092,6 +1179,10 @@ label {
   height: 300px;
 }
 
+.h-\[35vh\] {
+  height: 35vh;
+}
+
 .h-\[400px\] {
   height: 400px;
 }
@@ -1134,6 +1225,11 @@ label {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .-translate-y-1\/2 {
@@ -1223,6 +1319,10 @@ label {
 
 .gap-y-10 {
   row-gap: 2.5rem;
+}
+
+.gap-y-14 {
+  row-gap: 3.5rem;
 }
 
 .gap-y-16 {
@@ -1344,6 +1444,11 @@ label {
   padding-bottom: 0.5rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1382,6 +1487,11 @@ label {
   font-size: 38px;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1409,6 +1519,10 @@ label {
   font-weight: 600;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
 .leading-10 {
   line-height: 2.5rem;
 }
@@ -1423,6 +1537,11 @@ label {
 
 .tracking-wider {
   letter-spacing: 0.05em;
+}
+
+.text-brown-color {
+  --tw-text-opacity: 1;
+  color: rgb(132 102 78 / var(--tw-text-opacity));
 }
 
 .text-green-color {
@@ -1562,6 +1681,11 @@ label {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:gap-x-6 {
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
   }
 
   .md\:text-3xl {

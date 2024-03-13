@@ -61,109 +61,69 @@
     </header>
 
     <main>
-      <section
-        class="flex items-center justify-center h-full rounded-2x relative"
-      >
-        <div
-          class="login-form flex w-[300px] h-[550px] md:w-[800px] bg-white h-ful rounded-2xl shadow-lg"
-        >
+      <!-- banner -->
+      <section id="full-banner">
+        <div class="banner-wrapper w-full h-[35vh] bg-green-color relative">
+          <img class="w-full h-full" src="../img/download (2).jpg" alt="" />
+          <!-- content box -->
           <div
-            class="blob absolute w-[400px] h-[400px] rounded-full bg-brown-color top-0 left-0"
-          ></div>
-          <!-- form -->
-          <form
-            id="login-from"
-            class="md:w-1/2 w-full h-full flex flex-col px-10 py-10"
+            class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-10 text-center"
           >
-            <!-- heading -->
-            <div
-              class="flex flex-col justify-start items-center text-left gap-y-2"
+            <h2
+              class="capitalize text-yellow-color font-bold text-2xl md:text-3xl"
             >
-              <h2 class="text-2xl md:text-3xl font-bold text-center">
-                Wellcome Back !
-              </h2>
-              <p class="text-sm font-medium md:mb-5 mt-2">
-                Countinue your career :)
-              </p>
+              Let's go and make the differences
+            </h2>
+            <p class="text-lg text-brown-color">#NFT</p>
+          </div>
+        </div>
+      </section>
 
-              <!-- login options -->
-              <div>
-                <button
-                  class="btn-primary border-black-color px-2 py-1 text-sm font-bold"
-                >
-                  <i class="ri-google-fill"></i> Login with Google
-                </button>
-                <button
-                  class="btn-primary border-black-color px-2 py-1 text-sm font-bold"
-                >
-                  <i class="ri-apple-fill"></i> Login with Apple
-                </button>
-              </div>
+      <!-- categories -->
+      <section>
+        <div class="container w-full">
+          <nav data-categories-wrapper class="py-4">
+            <ul
+              id="categories-menu"
+              class="flex items-center justify-start gap-x-5"
+            >
+              <li
+                data-category-item
+                class="category-item font-medium text-white text-base"
+              >Art NFTs
+              </li>
+              <li
+                data-category-item
+                class="category-item font-medium text-white text-base"
+              >Collectibles NFTs
+              </li>
+              <li
+                data-category-item
+                class="category-item font-medium text-white text-base"
+              >Gaming NFTs
+              </li>
+              <li
+                data-category-item
+                class="category-item font-medium text-white text-base"
+              >Utility NFTs
+              </li>
+              <li
+              data-category-item
+              class="category-item font-medium text-white text-base"
+            >All NFTs
+            </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- product container -->
+        <div class="mt-10 w-full h-full">
+          <div
+            id="product-container"
+            class="container pro-container grid grid-cols-12 gap-y-14 md:gap-x-6"
+          >
+            <!-- product -->
+            
             </div>
-
-            <!-- input filds -->
-            <div class="flex flex-col gap-y-7 mt-10">
-              <!-- email -->
-              <div class="flex flex-col gap-y-1">
-                <label for="email-input">Email:</label>
-                <input
-                  id="email-input"
-                  class="input-fild"
-                  type="text"
-                  name="email-input"
-                />
-              </div>
-
-              <!-- password -->
-              <div class="flex flex-col gap-y-1">
-                <div class="flex items-center justify-between">
-                  <label for="passwordInput">Password:</label>
-                  <span class="text-sm font-semibold text-yellow-color"
-                    ><a href="#">Forgot Password?</a></span
-                  >
-                </div>
-                <input
-                  id="password-input"
-                  class="input-fild"
-                  type="text"
-                  name="passwordInput"
-                />
-              </div>
-
-              <!-- checkbox -->
-              <div class="flex items-center gap-x-3">
-                <input type="checkbox" />
-                <span class="text-sm font-semibold"
-                  >Iagree to the
-                  <a class="text-yellow-color" href="#"
-                    >Terms & Privacy</a
-                  ></span
-                >
-              </div>
-
-              <!-- submit btn -->
-              <button
-                id="submit-btn"
-                type="submit"
-                class="w-full bg-green-color py-2 rounded-2xl text-white font-semibold"
-              >
-                Login
-              </button>
-
-              <p class="text-sm font-semibold">
-                Don't have an account?
-                <a href="#" class="text-yellow-color">Sign up</a>
-              </p>
-            </div>
-          </form>
-
-          <!-- img content -->
-          <div class="md:w-1/2 h-full hidden md:block">
-            <img
-              src="../img/login-form.webp"
-              class="w-full h-full object-cover rounded-e-2xl"
-              alt=""
-            />
           </div>
         </div>
       </section>
@@ -265,7 +225,7 @@
       </div>
     </footer>
 
-    <script src="js/loginValidation.js"></script>
+    <script src="js/collection.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

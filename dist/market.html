@@ -30,11 +30,11 @@
               <a href="collection.html" class="nav-link">Collection</a>
             </li>
             <li class="nav-item">
-              <a href="market.html" class="nav-link">Market Place</a>
+              <a href="#" class="nav-link">Market Place</a>
             </li>
             <li class="nav-item"><a href="#" class="nav-link">Community</a></li>
             <button class="btn-primary">
-              <a id="login-btn" href="login.html">Login</a>
+              <a id="login-btn" href="#">Login</a>
             </button>
           </ul>
         </nav>
@@ -51,7 +51,7 @@
               <a href="collection.html" class="nav-link">Collection</a>
             </li>
             <li class="nav-item">
-              <a href="market.html" class="nav-link">Market Place</a>
+              <a href="#" class="nav-link">Market Place</a>
             </li>
             <li class="nav-item"><a href="#" class="nav-link">Community</a></li>
           </ul>
@@ -64,7 +64,11 @@
       <!-- banner -->
       <section id="full-banner">
         <div class="banner-wrapper w-full h-[35vh] bg-green-color relative">
-          <img class="w-full h-full" src="../img/download (2).jpg" alt="" />
+          <img
+            class="w-full h-full"
+            src="../img/pexels-pratikxox-4025825.jpg"
+            alt=""
+          />
           <!-- content box -->
           <div
             class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 z-10 text-center"
@@ -79,51 +83,93 @@
         </div>
       </section>
 
-      <!-- categories -->
-      <section>
-        <div class="container w-full">
-          <nav data-categories-wrapper class="py-4">
-            <ul
-              id="categories-menu"
-              class="flex items-center justify-start gap-x-5"
-            >
-              <li
-                data-category-item
-                class="category-item font-medium text-white text-base"
-              >Art NFTs
-              </li>
-              <li
-                data-category-item
-                class="category-item font-medium text-white text-base"
-              >Collectibles NFTs
-              </li>
-              <li
-                data-category-item
-                class="category-item font-medium text-white text-base"
-              >Gaming NFTs
-              </li>
-              <li
-                data-category-item
-                class="category-item font-medium text-white text-base"
-              >Utility NFTs
-              </li>
-              <li
-              data-category-item
-              class="category-item font-medium text-white text-base"
-            >All NFTs
-            </li>
-            </ul>
-          </nav>
+      <!-- section market -->
+      <section class="">
+        <!-- categories -->
+        <div class="container">
+          <div class="container w-full">
+            <nav data-categories-wrapper class="py-4">
+              <ul
+                id="categories-menu"
+                class="flex items-center justify-start gap-x-5"
+              >
+                <li
+                  data-category-item
+                  class="category-item font-medium text-white text-base"
+                >
+                  Art NFTs
+                </li>
+                <li
+                  data-category-item
+                  class="category-item font-medium text-white text-base"
+                >
+                  Collectibles NFTs
+                </li>
+                <li
+                  data-category-item
+                  class="category-item font-medium text-white text-base"
+                >
+                  Gaming NFTs
+                </li>
+                <li
+                  data-category-item
+                  class="category-item font-medium text-white text-base"
+                >
+                  Utility NFTs
+                </li>
+                <li
+                  data-category-item
+                  class="category-item font-medium text-white text-base"
+                >
+                  All NFTs
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <!-- product container -->
-        <div class="mt-10 w-full h-full">
-          <div
-            id="product-container"
-            class="container pro-container grid grid-cols-12 gap-y-14 md:gap-x-6"
-          >
-            <!-- product -->
-            
+
+        <!-- productSlider -->
+        <div class="container w-full h-full relative mt-12">
+          <!-- slider -->
+          <div class="pro-container slider-container"></div>
+          <!-- slider btns -->
+          <button class="slider-btn prev-btn">
+            <i class="ri-arrow-right-s-line"></i>
+          </button>
+          <button class="slider-btn next-btn">
+            <i class="ri-arrow-left-s-line"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- banners -->
+      <section>
+        <div
+          class="container mt-20 flex items-start justify-between w-full h-[50vh]"
+        >
+          <!-- text content -->
+          <div class="h-full w-[50%] flex flex-col items-center justify-center">
+            <h2 class="text-2xl md:text-3xl text-white font-bold">
+              Let's enter a world together where art, technology, and digital
+              currencies are intertwined.
+            </h2>
+            <p class="text-gray-400 mt-5">
+              "You too can be part of this revolution. By buying and holding
+              NFTs, you become the owner of a unique piece of digital art that
+              enables you to directly connect with your favorite artists and be
+              part of the creation and distribution of their works."
+            </p>
+            <div class="w-full mt-7">
+              <a href="#" class="btn-primary text-white">Learn More</a>
             </div>
+          </div>
+          <!-- img content -->
+          <div class="w-[50%] h-full py-10 rounedd-3xl">
+            <img
+              class="w-full h-full object-cover rounded-3xl shadow-md hover:scale-[1.03]"
+              src="../img/userProfile/gallery-14.jpg"
+              alt=""
+            />
           </div>
         </div>
       </section>
@@ -225,7 +271,7 @@
       </div>
     </footer>
 
-    <script src="js/collection.js"></script>
+    <script src="js/market.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

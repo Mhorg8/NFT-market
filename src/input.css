@@ -365,4 +365,39 @@
   .pro-container .gallery-box:hover .product-text-content {
     opacity: 1;
   }
+
+  /* ///////////////////////////////////////////////////////////////////////////////// */
+  /* ///////////////////////////////////////////////////////////////////////////////// */
+  /* ///////////////////////////////////////////////////////////////////////////////// */
+  .slider-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    overflow: hidden;
+    /* padding: 0 20px; */
+    grid-auto-flow: column;
+    column-gap: 30px;
+  }
+  .slider-btn {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    font-size: 24px;
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.45s ease;
+  }
+  .slider-btn.next-btn {
+    left: 0;
+  }
+  .slider-btn.prev-btn {
+    right: 0;
+  }
+  .slider-btn:is(:hover, :active) {
+    border-color: var(--yellow);
+    color: var(--yellow);
+  }
 }

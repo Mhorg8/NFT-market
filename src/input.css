@@ -417,4 +417,39 @@
       grid-column: span 3;
     }
   }
+
+  .user-profile-img {
+    border: 3px solid var(--yellow);
+    transition: 0.35s ease;
+  }
+  .user-profile-img:hover {
+    transform: scale(1.15);
+  }
+  .follow-btn {
+    font-size: 14px;
+    padding: 3px 8px;
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: 500;
+    border-radius: 15px;
+    transition: all 0.35s ease;
+  }
+  .follow-btn:hover {
+    color: var(--green);
+    background-color: var(--yellow);
+  }
+  .profile-post {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .profile-post {
+    animation: fade-in 1s linear forwards;
+  }
+  .profile-post:nth-child(even) {
+    animation: fade-in 1s 0.5s linear forwards;
+  }
+  .profile-post:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  }
 }

@@ -38,7 +38,6 @@ categoryItems.forEach(cate => {
 })
 // when page loaded , display items
 document.addEventListener('DOMContentLoaded', generateProduct(products))
-
 // this function  to generate the product cards based on data in array
 function generateProduct(arr) {
   productContainer.innerHTML = ''
@@ -73,6 +72,7 @@ function generateProduct(arr) {
 
   })
 }
+/////////////////////////////////////////////////////////////////////////////////////
 // filter products by  category
 function filterCategories(selected) {
   let filteredProducts = products.filter(pro => pro.category === selected);
@@ -96,7 +96,7 @@ sliderBtns.forEach(btn => {
       btn.classList.contains('next-btn') ? -productWidth : +productWidth
   })
 })
-
+/////////////////////////////////////////////////////////////////////////////////////
 // set animation to banner textcontetn
 const bannertText = document.querySelector('.banner-text-content');
 document.addEventListener('scroll', () => {
@@ -107,6 +107,7 @@ document.addEventListener('scroll', () => {
     bannertText.classList.remove('show-animation');
 })
 
+/////////////////////////////////////////////////////////////////////////////////////
 // Collectibles NFTs
 const collectiblesItems = document.querySelector('.collectibles-items');
 const gamingItems = document.querySelector('.gameing-items');

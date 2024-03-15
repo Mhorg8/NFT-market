@@ -400,4 +400,21 @@
     border-color: var(--yellow);
     color: var(--yellow);
   }
+  .banner-text-content.show-animation {
+    animation: move-left 0.5s 0.2s linear forwards;
+  }
+  .showcase {
+    grid-column: span 12;
+  }
+  @media screen and (min-width: 485px) {
+    .showcase {
+      grid-column: span 6;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .showcase {
+      grid-column: span 3;
+    }
+  }
 }

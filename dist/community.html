@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT MARKET</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <!-- remix icon -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <body class="bg-black-color">
+    <!-- header -->
+    <header class="lg-header overflow-hidden">
+      <div class="container flex items-center justify-between text-white py-8">
+        <!-- logo -->
+        <div>
+          <a class="font-bold text-xl logo" href="index.html">EnDashmo</a>
+        </div>
+
+        <!-- large menu -->
+        <nav class="flex items-center gap-x-8">
+          <ul class="lg-menu md:flex items-center gap-x-8 hidden">
+            <li class="nav-item">
+              <a href="collection.html" class="nav-link">Collection</a>
+            </li>
+            <li class="nav-item">
+              <a href="market.html" class="nav-link">Market Place</a>
+            </li>
+            <li class="nav-item">
+              <a href="community.html" class="nav-link">Community</a>
+            </li>
+            <button class="btn-primary">
+              <a id="login-btn" href="login.html">Login</a>
+            </button>
+          </ul>
+        </nav>
+
+        <!-- hamburger-btn -->
+        <div id="hamburger-btn" class="z-50 block md:hidden">
+          <i class="ri-menu-line text-2xl font-bold"></i>
+        </div>
+
+        <!-- mobil menu -->
+        <nav id="mobile-menu" class="mobile-menu z-30">
+          <ul class="lg-menu flex flex-col items-center gap-y-8">
+            <li class="nav-item">
+              <a href="collection.html" class="nav-link">Collection</a>
+            </li>
+            <li class="nav-item">
+              <a href="market.html" class="nav-link">Market Place</a>
+            </li>
+            <li class="nav-item">
+              <a href="community.html" class="nav-link">Community</a>
+            </li>
+          </ul>
+          <button class="btn-primary"><a href="#">Profile</a></button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container grid grid-cols-12 w-full h-full">
+        <!-- other person u can follow -->
+        <div
+          class="col-span-2 md:md:col-span-3 py-4 bg-white border-r rounded-s-3xl"
+        >
+          <div
+            class="flex flex-col items-center md:items-start justify-between gap-y-5 md:px-3"
+          >
+            <h2 class="font-medium">other NFT person</h2>
+            <!-- user profile 1 -->
+            <div
+              class="flex flex-col md:flex-row items-center md:gap-x-5 justify-center user-profile w-full"
+            >
+              <!-- user Profile img -->
+              <img
+                src="/img/userProfile/prof-1.jpg"
+                class="rounded-full w-14 h-14 object-cover user-profile-img"
+              />
+              <div class="flex items-center justify-between w-full">
+                <!-- user informations -->
+                <div
+                  class="hidden lg:flex items-start justify-center flex-col w-full"
+                >
+                  <h3 class="text-sm md:text-base font-semibold">Sara</h3>
+                  <p class="text-xs text-gray-400">Developer</p>
+                </div>
+                <!-- follow buttom -->
+                <button class="follow-btn mt-1 md:mt-0">Follow</button>
+              </div>
+            </div>
+
+            <!-- user profile 1 -->
+            <div
+              class="flex flex-col md:flex-row items-center gap-x-5 justify-between user-profile w-full"
+            >
+              <!-- user Profile img -->
+              <img
+                src="/img/userProfile/prof-2.jpg"
+                class="rounded-full w-14 h-14 object-cover user-profile-img"
+              />
+              <div class="flex items-center justify-between w-full">
+                <!-- user informations -->
+                <div
+                  class="hidden lg:flex items-start justify-center flex-col w-full"
+                >
+                  <h3 class="text-sm md:text-base font-semibold">Alex</h3>
+                  <p class="text-xs text-gray-400">Customer</p>
+                </div>
+                <!-- follow buttom -->
+                <button class="follow-btn mt-1 md:mt-0">Follow</button>
+              </div>
+            </div>
+
+            <!-- user profile 1 -->
+            <div
+              class="flex flex-col md:flex-row items-center gap-x-5 justify-between user-profile w-full"
+            >
+              <!-- user Profile img -->
+              <img
+                src="/img/userProfile/prof-3.jpg"
+                class="rounded-full w-14 h-14 object-cover user-profile-img"
+              />
+              <div class="flex items-center justify-between w-full">
+                <!-- user informations -->
+                <div
+                  class="hidden lg:flex items-start justify-center flex-col w-full"
+                >
+                  <h3 class="text-sm md:text-base font-semibold">Mohammad</h3>
+                  <p class="text-xs text-gray-400">Trader</p>
+                </div>
+                <!-- follow buttom -->
+                <button class="follow-btn mt-1 md:mt-0">Follow</button>
+              </div>
+            </div>
+
+            <!-- user profile 1 -->
+            <div
+              class="flex flex-col md:flex-row items-center gap-x-5 justify-between user-profile w-full"
+            >
+              <!-- user Profile img -->
+              <img
+                src="/img/userProfile/prof-4.jpg"
+                class="rounded-full w-14 h-14 object-cover user-profile-img"
+              />
+              <div
+                class="flex items-start justify-center md:justify-between w-full"
+              >
+                <!-- user informations -->
+                <div
+                  class="hidden lg:flex items-start justify-center flex-col w-full"
+                >
+                  <h3 class="text-sm md:text-base font-semibold">Fariba</h3>
+                  <p class="text-xs text-gray-400">Cusomer</p>
+                </div>
+                <!-- follow buttom -->
+                <button class="follow-btn mx-auto mt-1 md:mt-0">Follow</button>
+              </div>
+            </div>
+
+            <!-- user profile 1 -->
+            <div
+              class="flex flex-col md:flex-row items-center gap-x-5 justify-center user-profile w-full"
+            >
+              <!-- user Profile img -->
+              <img
+                src="/img/userProfile/prof-5.jpg"
+                class="rounded-full w-14 h-14 object-cover user-profile-img"
+              />
+              <div class="flex items-center justify-between w-full">
+                <!-- user informations -->
+                <div class="hidden lg:block">
+                  <h3 class="text-sm md:text-base font-semibold">Sara</h3>
+                  <p class="text-xs text-gray-400">Developer</p>
+                </div>
+                <!-- follow buttom -->
+                <button class="follow-btn mt-1 md:mt-0">Follow</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- other twittes -->
+        <div
+          class="col-span-8 flex flex-col justify-between items-center md:md:col-span-6 w-full h-full bg-white border-r"
+        >
+          <!-- first twittes -->
+          <div
+            class="flex items-center justify-center py-5 px-5 h-[100px] border-b"
+          >
+            <!-- user-img -->
+            <div class="h-full">
+              <a href="#">
+                <img
+                  class="w-[60px] h-[60px] object-cover rounded-full"
+                  src="../img/userProfile/prof-3.jpg"
+                  alt=""
+              /></a>
+            </div>
+            <!-- user information and intraction btns -->
+            <div class="flex-1 text-start w-full py-3 ml-2">
+              <div class="flex items-center justify-between">
+                <a href="#" class="font-semibold"
+                  ><i class="ri-checkbox-circle-fill text-green-color"></i>
+                  Mohammad</a
+                >
+                <div class="flex items-center gap-x-3">
+                  <i
+                    id="like-btn"
+                    class="ri-heart-line hover:text-red-600 cursor-pointer"
+                  ></i>
+                  <i
+                    id="bookmark-btn"
+                    class="ri-bookmark-line hover:text-blue-600 cursor-pointer"
+                  ></i>
+                  <i
+                    id="dislike-btn"
+                    class="ri-dislike-line hover:text-red-600 cursor-pointer"
+                  ></i>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-5 font-medium">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate neque, itaque repellat, nobis alias, assumenda quia
+                dicta quibusdam tenetur iste quasi commodi dolores accusantium
+                odit facere perspiciatis fuga! Culpa, ad!
+              </p>
+            </div>
+          </div>
+
+          <!-- second twittes -->
+          <div
+            class="flex items-center justify-center py-5 px-5 h-[100px] border-b"
+          >
+            <!-- user-img -->
+            <div class="h-full">
+              <a href="#">
+                <img
+                  class="w-[60px] h-[60px] object-cover rounded-full"
+                  src="../img/userProfile/prof-4.jpg"
+                  alt=""
+              /></a>
+            </div>
+            <!-- user information and intraction btns -->
+            <div class="flex-1 text-start w-full py-3 ml-2">
+              <div class="flex items-center justify-between">
+                <a href="#" class="font-semibold"
+                  ><i class="ri-checkbox-circle-fill text-green-color"></i>
+                  Fariba</a
+                >
+                <div class="flex items-center gap-x-3">
+                  <i
+                    id="like-btn"
+                    class="ri-heart-line hover:text-red-600 cursor-pointer"
+                  ></i>
+                  <i
+                    id="bookmark-btn"
+                    class="ri-bookmark-line hover:text-blue-600 cursor-pointer"
+                  ></i>
+                  <i
+                    id="dislike-btn"
+                    class="ri-dislike-line hover:text-red-600 cursor-pointer"
+                  ></i>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-5 font-medium">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate neque, itaque repellat, nobis alias, assumenda quia
+                dicta quibusdam tenetur iste quasi commodi dolores accusantium
+                odit facere perspiciatis fuga! Culpa, ad!
+              </p>
+            </div>
+          </div>
+
+          <!-- third twittes -->
+          <div
+            class="flex items-center justify-center py-5 px-5 h-[100px] border-b"
+          >
+            <!-- user-img -->
+            <div class="h-full">
+              <a href="#"
+                ><img
+                  class="w-[60px] h-[60px] object-cover rounded-full"
+                  src="../img/userProfile/prof-1.jpg"
+                  alt=""
+              /></a>
+            </div>
+            <!-- user information and intraction btns -->
+            <div class="flex-1 text-start w-full py-3 ml-2">
+              <div class="flex items-center justify-between">
+                <a href="#" class="font-semibold"
+                  ><i class="ri-checkbox-circle-fill text-green-color"></i>
+                  Sara</a
+                >
+                <div class="flex items-center gap-x-3">
+                  <i
+                    id="like-btn"
+                    class="ri-heart-line hover:text-red-600 cursor-pointer"
+                  ></i>
+                  <i
+                    id="bookmark-btn"
+                    class="ri-bookmark-line hover:text-blue-600 cursor-pointer"
+                  ></i>
+                  <i
+                    id="dislike-btn"
+                    class="ri-dislike-line hover:text-red-600 cursor-pointer"
+                  ></i>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-5 font-medium">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate neque, itaque repellat, nobis alias, assumenda quia
+                dicta quibusdam tenetur iste quasi commodi dolores accusantium
+                odit facere perspiciatis fuga! Culpa, ad!
+              </p>
+            </div>
+          </div>
+
+          <!-- forth twittes -->
+          <div
+            class="flex items-center justify-center py-5 px-5 h-[100px] border-b"
+          >
+            <!-- user-img -->
+            <div class="h-full">
+              <a href="#"
+                ><img
+                  class="w-[60px] h-[60px] object-cover rounded-full"
+                  src="../img/userProfile/prof-5.jpg"
+                  alt=""
+              /></a>
+            </div>
+            <!-- user information and intraction btns -->
+            <div class="flex-1 text-start w-full py-3 ml-2">
+              <div class="flex items-center justify-between">
+                <a href="#" class="font-semibold"
+                  ><i class="ri-checkbox-circle-fill text-green-color"></i>
+                  Sara</a
+                >
+                <div class="flex items-center gap-x-3">
+                  <i
+                    id="like-btn"
+                    class="ri-heart-line hover:text-red-600 cursor-pointer"
+                  ></i>
+                  <i
+                    id="bookmark-btn"
+                    class="ri-bookmark-line hover:text-blue-600 cursor-pointer"
+                  ></i>
+                  <i
+                    id="dislike-btn"
+                    class="ri-dislike-line hover:text-red-600 cursor-pointer"
+                  ></i>
+                </div>
+              </div>
+              <p class="text-slate-700 text-sm leading-5 font-medium">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate neque, itaque repellat, nobis alias, assumenda quia
+                dicta quibusdam tenetur iste quasi commodi dolores accusantium
+                odit facere perspiciatis fuga! Culpa, ad!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- own profile -->
+        <div class="col-span-2 md:md:col-span-3 bg-white rounded-e-3xl">
+          <div class="flex flex-col items-center py-4">
+            <!-- profile img and direct messages -->
+            <div
+              class="w-full flex items-center justify-between border-b px-4 pb-6"
+            >
+              <div class="flex items-center justify-center gap-x-5">
+                <!-- profile img -->
+                <img
+                  class="w-[60px] h-[60px] rounded-full object-cover"
+                  src="../img/download (2).jpg"
+                  alt="profile-img"
+                />
+              </div>
+              <!-- own user name -->
+              <div class="flex flex-col items-center justify-center">
+                <p class="text-sm font-semibold">
+                  <i class="ri-checkbox-circle-fill text-green-color"></i>
+                  Mhorg-8
+                </p>
+                <p class="text-xs font-bold text-gray-400">NFT Holder</p>
+              </div>
+
+              <!-- direct message -->
+              <div class="relative">
+                <i id="direct-btn" class="ri-send-plane-line text-2xl font-medium"></i>
+                <div
+                  class="text-xs font-bold absolute bg-white rounded-full -top-1 right-0"
+                >
+                  2
+                </div>
+              </div>
+            </div>
+
+            <!-- profile pictures -->
+            <div class="w-full grid grid-cols-3">
+              <h2 class="col-span-3 py-3 px-5 font-medium">My NFTs Projects</h2>
+              <img
+                src="../img/userProfile/gallery-10.jpg"
+                alt=""
+                class="profile-post"
+              />
+              <img
+                src="../img/userProfile/gallery-12.jpg"
+                alt=""
+                class="profile-post"
+              />
+              <img
+                src="../img/userProfile/gallery-13.jpg"
+                alt=""
+                class="profile-post"
+              />
+              <img
+                src="../img/userProfile/gallery-11.jpg"
+                alt=""
+                class="profile-post"
+              />
+              <img
+                src="../img/userProfile/gallery-9.jpg"
+                alt=""
+                class="profile-post"
+              />
+              <img
+                src="../img/userProfile/gallery-15.jpg"
+                alt=""
+                class="profile-post"
+              />
+              <img src="../img/login-form.webp" alt="" class="profile-post" />
+              <img
+                src="../img/userProfile/gallery-16.jpg"
+                alt=""
+                class="profile-post"
+              />
+              <img
+                src="../img/userProfile/gallery-18.jpg"
+                alt=""
+                class="profile-post"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container flex w-full h-full md:mt-24 mt-14 relative">
+        <div
+          class="blob absolute w-[400px] h-[400px] bg-green-color bottom-1/2 -translate-y-1/2 md:-bottom-32 right-10"
+        ></div>
+        <div class="grid grid-cols-12 w-full h-full gap-x-3">
+          <div class="col-span-12 md:col-span-4 w-full h-full">
+            <h3 class="text-white text-xl font-bold traling-thin">EnDashmo</h3>
+            <p class="text-white text-lg leading-5 my-3">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+              voluptas explicabo ullam tempore.
+            </p>
+            <!-- social icons -->
+            <div class="flex items-center gap-x-8">
+              <i class="ri-discord-line text-2xl text-white social-links"></i>
+              <i class="ri-instagram-line text-2xl text-white social-links"></i>
+              <i class="ri-telegram-line text-2xl text-white social-links"></i>
+              <i class="ri-pinterest-line text-2xl text-white social-links"></i>
+            </div>
+          </div>
+
+          <!-- <div class="h-full w-full"> -->
+          <ul
+            class="col-span-6 md:col-span-2 flex flex-col gap-y-5 my-4 md:my-0"
+          >
+            <h3 class="text-white text-2xl font-bold tracking-wider">
+              Explore
+            </h3>
+            <li class="footer-item"><a class="footer-link" href="#">Art</a></li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Collectibles</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Domain Name</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Utility</a>
+            </li>
+          </ul>
+
+          <ul
+            class="col-span-6 md:col-span-2 flex flex-col gap-y-5 my-4 md:my-0"
+          >
+            <h3 class="text-white text-2xl font-bold tracking-wider">
+              Statistic
+            </h3>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Ranking</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Activity</a>
+            </li>
+          </ul>
+
+          <ul
+            class="col-span-6 md:col-span-2 flex flex-col gap-y-5 my-4 md:my-0"
+          >
+            <h3 class="text-white text-2xl font-bold tracking-wider">
+              Resource
+            </h3>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Help Center</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Platform Status</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Partners</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Blog</a>
+            </li>
+            <li class="footer-item"><a class="footer-link" href="#">FAQ</a></li>
+          </ul>
+
+          <ul
+            class="col-span-6 md:col-span-2 flex flex-col gap-y-5 my-4 md:my-0"
+          >
+            <h3 class="text-white text-2xl font-bold tracking-wider">
+              Company
+            </h3>
+            <li class="footer-item">
+              <a class="footer-link" href="#">About Us</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Career</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="#">Suport</a>
+            </li>
+          </ul>
+          <!-- </div> -->
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/market.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

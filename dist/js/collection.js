@@ -66,3 +66,4 @@ function filterCategories(selected) {
     // if items includs with true category , display filterd items
     generateProduct(filteredProducts)
 }
+
